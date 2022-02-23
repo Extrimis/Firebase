@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stack</title>
+
+        <meta charset="utf-8">        
+        <meta name="theme-color" content="#039be5">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+        <link rel="stylesheet" href="plugins/snackbar/snackbar.min.css"/>
+        <link rel="stylesheet" href="stylesheets/main.css"/>
+    </head>
+    <body>
+        <section class="app-container">
+            <div class="login">
+                <div class="animation-container">
+                    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_puciaact.json"  background="transparent"  speed="1"  style="width: 500px;"  loop autoplay></lottie-player>
+                </div>
+                <div class="login-form-container">
+                    <h1 class="login-title">Hello ! Welcome back</h1>
+                    <span class="sub-title">Please Enter your credentials to sign in to your<br> workspace</span>
+                    <div class="login-form">
+                        <div class="flex-align-start">
+                            <span class="form-label">Email address :</span>
+                            <input type="text" class="form-input email" placeholder="eg: peterparker@gmail.com">
+                            <div class="password-label-container">
+                                <span class="form-label">Password :</span>                        
+                                <a class="forgot-password-btn">Forgot Password?</a>
+                            </div>
+                            <input type="password" class="form-input password" placeholder="Enter your password">
+                            <a class="sign-in-btn">Sign in to your account</a>
+                            <span class="or-label">OR</span>
+                            <a class="sign-in-google-btn">
+                                <img src="assets/images/logo-google.svg">
+                                Sign in with Google
+                            </a>
+                            <!--
+                            <div class="account-signup">
+                                Dont Have an account ? &nbsp;<a href="signup.html" class="sign-up-link">Sign Up</a>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="plugins/jquery/v3.6.0/jquery-3.6.0.min.js"></script>
+        <script src="plugins/snackbar/snackbar.min.js"></script>
+        <script src="scripts/login.js"></script>
+        <script src="scripts/config.js"></script>
+    </body>
+</html>
